@@ -1,0 +1,1 @@
+var burgers = require('./../models/burger.js');
