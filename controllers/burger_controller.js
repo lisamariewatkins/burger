@@ -26,3 +26,5 @@ router.put('burgers/update/:id', function(req, res){
 		res.redirect('/burgers');
 	});
 });
+
+module.exports = router;
