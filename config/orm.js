@@ -25,7 +25,7 @@ var orm = {
 		})
 	},
 	insertOne: function(table, cols, vals, cb){
-		var queryString = "INSERT INTO " + table + " (" cols.toString() + ") " + "VALUES (" + questionMarks(vals.length) + ");";
+		var queryString = "INSERT INTO " + table + " (" + cols.toString() + ") " + "VALUES (" + questionMarks(vals.length) + ");";
 		connection.query(queryString, function(err,result){
 			if (err) throw err;
 			cb(result)
