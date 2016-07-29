@@ -17,9 +17,6 @@
     "url": "https://github.com/lisamariewatkins/krustykrabpatties/issues"
   },
   "homepage": "https://github.com/lisamariewatkins/krustykrabpatties#readme",
-  "engines": {
-    "node": "4.4.5"
-  },
   "dependencies": {
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
@@ -27,4 +24,7 @@
     "mysql": "^2.11.1",
     "ejs": "2.4.1"
   },
+  "engines": {
+    "node": "4.4.5"
+  }
 }
