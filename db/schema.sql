@@ -2,7 +2,7 @@
 CREATE DATABASE burgers_db;
 
 #use burgers_db
-USE 'burgers_db';
+USE burgers_db;
 
 #create burgers table
 CREATE TABLE burgers 

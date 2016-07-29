@@ -26,9 +26,10 @@ var orm = {
 	},
 	insertOne: function(table, cols, vals, cb){
 		var queryString = "INSERT INTO " + table + " (" + cols.toString() + ") " + "VALUES (" + questionMarks(vals.length) + ") ";
+		console.log(cols);
 		connection.query(queryString, vals, function(err,result){
 			if (err) throw err;
-			cb(result)
+			cb(result);
 		});
 	},
 	updateOne: function(table, sqlObject, condition, cb){

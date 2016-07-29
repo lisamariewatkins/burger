@@ -12,7 +12,7 @@ var burger = {
 		});
 	},
 	updateOne: function(sqlObject, condition, cb){
-		orm.insertOne('burgers', sqlObject, condition, function(res){
+		orm.updateOne('burgers', sqlObject, condition, function(res){
 			cb(res);
 		});
 	}
