@@ -25,14 +25,14 @@ var orm = {
 		})
 	},
 	insertOne: function(table, cols, vals, cb){
-		var queryString = "INSERT INTO " + table + " (" + cols.toString() + ") " + "VALUES (" + questionMarks(vals.length) + ");";
-		connection.query(queryString, function(err,result){
+		var queryString = "INSERT INTO " + table + " (" + cols.toString() + ") " + "VALUES (" + questionMarks(vals.length) + ") ";
+		connection.query(queryString, vals, function(err,result){
 			if (err) throw err;
 			cb(result)
 		});
 	},
-	updateOne: function(table, sqlObj, condition, cb){
-		var queryString = "UPDATE " + table + " SET " + sqlObj(sqlObj) + " WHERE " + condition + ";";
+	updateOne: function(table, sqlObject, condition, cb){
+		var queryString = "UPDATE " + table + " SET " + sqlObj(sqlObject) + " WHERE " + condition + ";";
 		connection.query(queryString, function(err,result){
 			if (err) throw err;
 			cb(result);

@@ -13,13 +13,13 @@ router.get('/burgers', function(req,res){
 	});
 });
 
-router.post('/create', function(req,res){
-	burger.insertOne('[burger_name, devoured]', [req.body.burger_name, req.body.devoured], function(data){
+router.post('burgers/create', function(req,res){
+	burger.insertOne(['burger_name', 'devoured'], [req.body.burger_name, req.body.devoured], function(data){
 			res.redirect('/burgers');
 	});
 });
 
-router.post('update/:id', function(req, res){
+router.put('burgers/update/:id', function(req, res){
 	var condition = "id = " + req.params.id;
 
 	burger.updateOne({'devoured':req.body.devoured}, condition, function(data){
