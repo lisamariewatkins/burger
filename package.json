@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lisamariewatkins/burger.git"
+    "url": "git+https://github.com/lisamariewatkins/krustykrabpatties.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lisamariewatkins/burger/issues"
+    "url": "https://github.com/lisamariewatkins/krustykrabpatties/issues"
   },
-  "homepage": "https://github.com/lisamariewatkins/burger#readme",
+  "homepage": "https://github.com/lisamariewatkins/krustykrabpatties#readme",
   "dependencies": {
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
